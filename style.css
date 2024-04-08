@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#content {
+    margin: 20px;
+}
+
+.user {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.history, .predictions {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%; /* Ensure the table uses the full width */
+    border-collapse: collapse; /* Remove space between borders */
+}
+
+table, th, td {
+    border: 1px solid black; /* Add border to the table and cells */
+}
+
+th, td {
+    padding: 8px; /* Add more padding for visual separation */
+    text-align: left; /* Default text alignment to left */
+}
+
+.centered {
+    text-align: center; /* Center the text for cells with this class */
+}
+
+/* Add some spacing between rows for better readability */
+tr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Add this to your existing CSS styles */
+.history-summary {
+    margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
+}
+
+/* If the .history-summary class doesn't exist, use the direct styling */
+strong {
+    display: block; /* Make the <strong> element a block for margin to work */
+    margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
+}
+
+/* Add spacing to the top of the first table following any element */
+.history-details + table {
+    margin-top: 20px; /* Adjust the value as needed for desired spacing */
+}
+
+.hit {
+    color: green;
+}
+
